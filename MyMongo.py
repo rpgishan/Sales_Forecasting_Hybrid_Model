@@ -8,8 +8,7 @@ import pandas as pd
 
 class MyMongoBasicFunctions:
     def __init__(self, database):
-        # client = MongoClient('localhost', 27017)
-        client = MongoClient('mongodb://achira:ds825085@cluster0-shard-00-00-wdgti.mongodb.net:27017,cluster0-shard-00-01-wdgti.mongodb.net:27017,cluster0-shard-00-02-wdgti.mongodb.net:27017/Invictus_Reviews_Analysis?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin')
+        client = MongoClient('localhost', 27017)
         # self.db = client.database
         self.db = client[database]
 
